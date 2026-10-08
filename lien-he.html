@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Liên hệ - FITZONE Sports Center</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <style>
+
+        /* =====================================================
+           LIÊN HỆ NHANH
+        ===================================================== */
+
+        .contact-main {
+            padding: 80px 0;
+        }
+
+        .contact-main > .container {
+            width: 100%;
+        }
+
+
+        /* TIÊU ĐỀ */
+
+        .contact-heading {
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .contact-heading p {
+            margin-bottom: 12px;
+        }
+
+        .contact-heading h2 {
+            margin-bottom: 18px;
+        }
+
+        .contact-heading > span {
+            display: block;
+            max-width: 750px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+
+        /* 3 Ô LIÊN HỆ */
+
+        .quick-contact-grid {
+
+            width: 100%;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, minmax(0, 1fr));
+
+            gap: 28px;
+
+            margin-top: 45px;
+        }
+
+
+        .quick-contact-card {
+
+            min-width: 0;
+
+            min-height: 220px;
+
+            padding: 32px;
+
+            background: #ffffff;
+
+            border: 1px solid #dfe6ea;
+
+            border-radius: 18px;
+
+            box-sizing: border-box;
+
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 22px;
+
+            box-shadow:
+                0 10px 30px rgba(8, 43, 76, 0.07);
+
+            transition: .3s ease;
+        }
+
+
+        .quick-contact-card:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 16px 35px rgba(8, 43, 76, 0.12);
+        }
+
+
+        /* ICON */
+
+        .quick-contact-icon {
+
+            width: 64px;
+
+            height: 64px;
+
+            min-width: 64px;
+
+            border-radius: 16px;
+
+            background: #8bea3b;
+
+            color: #082b4c;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 28px;
+
+            font-weight: 900;
+        }
+
+
+        /* NỘI DUNG */
+
+        .quick-contact-content {
+
+            min-width: 0;
+        }
+
+
+        .quick-contact-content p {
+
+            margin: 0 0 10px;
+
+            color: #378018;
+
+            font-size: 13px;
+
+            font-weight: 900;
+
+            letter-spacing: 2px;
+        }
+
+
+        /* SỐ ĐIỆN THOẠI */
+
+        .quick-contact-content a {
+
+            display: block;
+
+            color: #082b4c;
+
+            text-decoration: none;
+
+            font-size: 30px;
+
+            line-height: 1.25;
+
+            font-weight: 900;
+
+            white-space: nowrap;
+        }
+
+
+        .quick-contact-content a:hover {
+
+            color: #378018;
+        }
+
+
+        /* MÔ TẢ */
+
+        .quick-contact-content span {
+
+            display: block;
+
+            margin-top: 12px;
+
+            color: #777;
+
+            font-size: 14px;
+
+            line-height: 1.6;
+        }
+
+
+        /* ĐỊA CHỈ */
+
+        .quick-contact-content strong {
+
+            display: block;
+
+            color: #082b4c;
+
+            font-size: 16px;
+
+            line-height: 1.65;
+
+            font-weight: 800;
+        }
+
+
+        /* NÚT GOOGLE MAP */
+
+        .quick-map-btn {
+
+            display: inline-block !important;
+
+            margin-top: 15px !important;
+
+            color: #378018 !important;
+
+            font-size: 13px !important;
+
+            font-weight: 900 !important;
+
+            text-decoration: none !important;
+
+            white-space: nowrap;
+        }
+
+
+        .quick-map-btn:hover {
+
+            color: #082b4c !important;
+        }
+
+
+        /* =====================================================
+           FAQ
+        ===================================================== */
+
+        .contact-faq {
+
+            padding-top: 70px;
+            padding-bottom: 80px;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media (max-width: 1050px) {
+
+            .quick-contact-grid {
+
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
+            }
+
+            .address-card {
+
+                grid-column: 1 / -1;
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            .quick-contact-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+            .address-card {
+
+                grid-column: auto;
+            }
+
+            .quick-contact-card {
+
+                min-height: auto;
+
+                padding: 25px;
+            }
+
+            .quick-contact-content a {
+
+                font-size: 26px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+
+            FIT<span>ZONE</span>
+
+            <small>
+                SPORTS CENTER
+            </small>
+
+        </a>
+
+
+        <div class="mobile-menu-button" id="mobileMenuButton">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<div id="site-menu"></div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     BANNER
+===================================================== -->
+
+<section class="page-banner contact-page-banner">
+
+    <div class="container">
+
+        <p>
+            FITZONE SPORTS CENTER
+        </p>
+
+        <h1>
+            LIÊN HỆ VỚI CHÚNG TÔI
+        </h1>
+
+        <span>
+
+            FITZONE luôn sẵn sàng lắng nghe,
+            hỗ trợ và đồng hành cùng bạn
+            trên hành trình rèn luyện sức khỏe.
+
+        </span>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     THÔNG TIN LIÊN HỆ
+===================================================== -->
+
+<section class="contact-page">
+
+    <div class="container">
+
+        <div class="section-heading contact-heading">
+
+            <p>
+                THÔNG TIN LIÊN HỆ
+            </p>
+
+            <h2>
+
+                FITZONE LUÔN
+
+                <span>
+                    SẴN SÀNG HỖ TRỢ
+                </span>
+
+            </h2>
+
+            <span>
+
+                Liên hệ với chúng tôi để được tư vấn
+                về bộ môn, khóa học, lịch tập
+                và các hoạt động tại FITZONE.
+
+            </span>
+
+        </div>
+
+
+        <div class="contact-page-grid">
+
+
+            <!-- ĐỊA CHỈ -->
+
+            <div class="contact-page-card">
+
+                <div class="contact-page-icon">
+                    📍
+                </div>
+
+                <div>
+
+                    <h3>
+                        Địa chỉ
+                    </h3>
+
+                    <p>
+
+                        42/3 Đường Mỹ Huề,<br>
+
+                        Trung Chánh, Hóc Môn,<br>
+
+                        TP. Hồ Chí Minh
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- HOTLINE -->
+
+            <div class="contact-page-card">
+
+                <div class="contact-page-icon">
+                    ☎
+                </div>
+
+                <div>
+
+                    <h3>
+                        Hotline
+                    </h3>
+
+                    <p>
+
+                        0901 234 567<br>
+
+                        Hỗ trợ: 06:00 - 22:00
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- EMAIL -->
+
+            <div class="contact-page-card">
+
+                <div class="contact-page-icon">
+                    ✉
+                </div>
+
+                <div>
+
+                    <h3>
+                        Email
+                    </h3>
+
+                    <p>
+
+                        ngocmaimtp2406@gmail.com<br>
+
+                        Phản hồi trong 24 giờ
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- GIỜ HOẠT ĐỘNG -->
+
+            <div class="contact-page-card">
+
+                <div class="contact-page-icon">
+                    ⏰
+                </div>
+
+                <div>
+
+                    <h3>
+                        Giờ hoạt động
+                    </h3>
+
+                    <p>
+
+                        Thứ 2 - Chủ nhật<br>
+
+                        06:00 - 22:00
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     LIÊN HỆ NHANH
+===================================================== -->
+
+<section class="contact-main">
+
+    <div class="container">
+
+
+        <div class="section-heading contact-heading">
+
+            <p>
+                LIÊN HỆ NGAY
+            </p>
+
+            <h2>
+
+                FITZONE LUÔN
+
+                <span>
+                    SẴN SÀNG HỖ TRỢ
+                </span>
+
+            </h2>
+
+            <span>
+
+                Cần tư vấn về bộ môn,
+                khóa học hoặc lịch tập?
+                Hãy liên hệ trực tiếp với FITZONE.
+
+            </span>
+
+        </div>
+
+
+
+        <div class="quick-contact-grid">
+
+
+            <!-- =================================================
+                 HOTLINE
+            ================================================== -->
+
+            <div class="quick-contact-card">
+
+                <div class="quick-contact-icon">
+                    ☎
+                </div>
+
+
+                <div class="quick-contact-content">
+
+                    <p>
+                        HOTLINE
+                    </p>
+
+
+                    <a href="tel:0901234567">
+
+                        0901 234 567
+
+                    </a>
+
+
+                    <span>
+
+                        Hỗ trợ nhanh từ 06:00 - 22:00
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ZALO
+            ================================================== -->
+
+            <div class="quick-contact-card">
+
+                <div class="quick-contact-icon">
+
+                    Z
+
+                </div>
+
+
+                <div class="quick-contact-content">
+
+                    <p>
+                        ZALO
+                    </p>
+
+
+                    <a
+                        href="https://zalo.me/0901234567"
+                        target="_blank"
+                        rel="noopener">
+
+                        0901 234 567
+
+                    </a>
+
+
+                    <span>
+
+                        Tư vấn và hỗ trợ qua Zalo
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ĐỊA CHỈ
+            ================================================== -->
+
+            <div class="quick-contact-card address-card">
+
+                <div class="quick-contact-icon">
+
+                    📍
+
+                </div>
+
+
+                <div class="quick-contact-content">
+
+                    <p>
+                        ĐỊA CHỈ
+                    </p>
+
+
+                    <strong>
+
+                        42/3 Đường Mỹ Huề,<br>
+
+                        Trung Chánh, Hóc Môn,<br>
+
+                        TP. Hồ Chí Minh
+
+                    </strong>
+
+
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=42%2F3%20%C4%90%C6%B0%E1%BB%9Dng%20M%E1%BB%B9%20Hu%E1%BB%81%2C%20Trung%20Ch%C3%A1nh%2C%20H%C3%B3c%20M%C3%B4n%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh"
+                        target="_blank"
+                        rel="noopener"
+                        class="quick-map-btn">
+
+                        XEM CHỈ ĐƯỜNG →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="contact-faq">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <p>
+                HỖ TRỢ NHANH
+            </p>
+
+
+            <h2>
+
+                CÂU HỎI
+
+                <span>
+                    THƯỜNG GẶP
+                </span>
+
+            </h2>
+
+
+            <span>
+
+                Một số thông tin bạn có thể cần
+                trước khi tham gia các hoạt động
+                tại FITZONE.
+
+            </span>
+
+        </div>
+
+
+
+        <div class="faq-grid">
+
+
+            <!-- FAQ 01 -->
+
+            <div class="faq-card">
+
+                <div class="faq-number">
+                    01
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Người mới có thể tham gia không?
+                    </h3>
+
+
+                    <p>
+
+                        Có. FITZONE có các chương trình
+                        cơ bản dành cho người mới bắt đầu
+                        và được hướng dẫn theo từng cấp độ.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FAQ 02 -->
+
+            <div class="faq-card">
+
+                <div class="faq-number">
+                    02
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Có thể đăng ký thử không?
+                    </h3>
+
+
+                    <p>
+
+                        Bạn có thể gửi thông tin đăng ký
+                        để được nhân viên tư vấn chương trình
+                        và lịch tập phù hợp.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FAQ 03 -->
+
+            <div class="faq-card">
+
+                <div class="faq-number">
+                    03
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        FITZONE hoạt động vào thời gian nào?
+                    </h3>
+
+
+                    <p>
+
+                        Trung tâm hoạt động từ 06:00
+                        đến 22:00 mỗi ngày,
+                        bao gồm cả cuối tuần.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FAQ 04 -->
+
+            <div class="faq-card">
+
+                <div class="faq-number">
+                    04
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Làm sao để đăng ký khóa học?
+                    </h3>
+
+
+                    <p>
+
+                        Bạn có thể vào trang Đăng ký
+                        hoặc chọn trực tiếp khóa học
+                        và gửi thông tin cho FITZONE.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="sports-cta">
+
+    <div class="container">
+
+        <p>
+            SẴN SÀNG BẮT ĐẦU?
+        </p>
+
+
+        <h2>
+
+            HẸN GẶP BẠN
+
+            <span>
+                TẠI FITZONE!
+            </span>
+
+        </h2>
+
+
+        <a
+            href="dang-ky.html"
+            class="contact-btn">
+
+            ĐĂNG KÝ NGAY →
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer-main">
+
+    <div class="container footer-grid">
+
+
+        <!-- GIỚI THIỆU -->
+
+        <div class="footer-about">
+
+            <a
+                href="index.html"
+                class="footer-logo">
+
+                FIT<span>ZONE</span>
+
+                <small>
+                    SPORTS CENTER
+                </small>
+
+            </a>
+
+
+            <p>
+
+                Trung tâm thể dục thể thao
+                hướng đến một cộng đồng
+                khỏe mạnh, năng động
+                và tích cực.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- LIÊN KẾT -->
+
+        <div class="footer-column">
+
+            <h3>
+                LIÊN KẾT
+            </h3>
+
+
+            <a href="index.html">
+                Trang chủ
+            </a>
+
+
+            <a href="gioi-thieu.html">
+                Giới thiệu
+            </a>
+
+
+            <a href="bo-mon.html">
+                Bộ môn
+            </a>
+
+
+            <a href="lich-tap.html">
+                Lịch tập
+            </a>
+
+        </div>
+
+
+
+        <!-- DỊCH VỤ -->
+
+        <div class="footer-column">
+
+            <h3>
+                DỊCH VỤ
+            </h3>
+
+
+            <a href="khoa-hoc.html">
+                Khóa học
+            </a>
+
+
+            <a href="huan-luyen-vien.html">
+                Huấn luyện viên
+            </a>
+
+
+            <a href="su-kien.html">
+                Sự kiện
+            </a>
+
+
+            <a href="dang-ky.html">
+                Đăng ký
+            </a>
+
+        </div>
+
+
+
+        <!-- LIÊN HỆ -->
+
+        <div class="footer-column">
+
+            <h3>
+                LIÊN HỆ
+            </h3>
+
+
+            <span>
+
+                📍 42/3 Đường Mỹ Huề,
+                Trung Chánh, Hóc Môn
+
+            </span>
+
+
+            <span>
+
+                ☎ 0901 234 567
+
+            </span>
+
+
+            <span>
+
+                ✉ ngocmaimtp2406@gmail.com
+
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 FITZONE SPORTS CENTER.
+            All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>

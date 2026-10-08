@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Đăng ký khóa học - FITZONE</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <!-- LOGO -->
+            <a href="index.html" class="logo">
+                FIT<span>ZONE</span>
+                <small>SPORTS CENTER</small>
+            </a>
+
+            <!-- MENU ĐƯỢC TẠO BẰNG JS -->
+            <div class="mobile-menu-button" id="mobileMenuButton">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<div id="site-menu"></div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         BANNER ĐĂNG KÝ
+    ====================================================== -->
+
+    <section class="register-banner">
+
+        <div class="container">
+
+            <p>FITZONE SPORTS CENTER</p>
+
+            <h1>ĐĂNG KÝ KHÓA HỌC</h1>
+
+            <span>
+                Bắt đầu hành trình rèn luyện và chinh phục mục tiêu của bạn.
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FORM ĐĂNG KÝ
+    ====================================================== -->
+
+    <section class="register-section">
+
+        <div class="container register-container">
+
+
+            <!-- =================================================
+                 THÔNG TIN BÊN TRÁI
+            ================================================== -->
+
+            <div class="register-info">
+
+                <p class="section-label">
+                    THAM GIA FITZONE
+                </p>
+
+                <h2>
+                    SẴN SÀNG
+                    <span>BỨT PHÁ GIỚI HẠN?</span>
+                </h2>
+
+                <p>
+                    Hãy để lại thông tin để đội ngũ FITZONE tư vấn
+                    khóa học phù hợp với mục tiêu và thời gian của bạn.
+                </p>
+
+
+                <!-- QUY TRÌNH ĐĂNG KÝ -->
+
+                <div class="register-note">
+
+                    <div class="register-note-item">
+
+                        <strong>01</strong>
+
+                        <span>
+                            Điền đầy đủ thông tin đăng ký
+                        </span>
+
+                    </div>
+
+
+                    <div class="register-note-item">
+
+                        <strong>02</strong>
+
+                        <span>
+                            FITZONE tiếp nhận thông tin
+                        </span>
+
+                    </div>
+
+
+                    <div class="register-note-item">
+
+                        <strong>03</strong>
+
+                        <span>
+                            Nhân viên liên hệ tư vấn
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- THÔNG TIN KHÓA HỌC -->
+
+                <div class="register-benefit">
+
+                    <div class="register-benefit-item">
+                        <span>✓</span>
+                        <p>
+                            Lộ trình học tập rõ ràng
+                        </p>
+                    </div>
+
+                    <div class="register-benefit-item">
+                        <span>✓</span>
+                        <p>
+                            Huấn luyện viên hướng dẫn
+                        </p>
+                    </div>
+
+                    <div class="register-benefit-item">
+                        <span>✓</span>
+                        <p>
+                            Phù hợp nhiều trình độ
+                        </p>
+                    </div>
+
+                    <div class="register-benefit-item">
+                        <span>✓</span>
+                        <p>
+                            Môi trường tập luyện năng động
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 FORM BÊN PHẢI
+            ================================================== -->
+
+            <div class="register-form-box">
+
+                <h3>
+                    THÔNG TIN ĐĂNG KÝ
+                </h3>
+
+                <p class="form-description">
+                    Vui lòng nhập thông tin chính xác để FITZONE có thể liên hệ.
+                </p>
+
+
+                <form id="registerForm" novalidate>
+
+
+                    <!-- HỌ VÀ TÊN -->
+
+                    <div class="form-group">
+
+                        <label for="fullname">
+                            Họ và tên <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            placeholder="Nhập họ và tên"
+                            autocomplete="name"
+                            required
+                        >
+
+                        <small class="form-error"></small>
+
+                    </div>
+
+
+                    <!-- SỐ ĐIỆN THOẠI + EMAIL -->
+
+                    <div class="form-row">
+
+
+                        <!-- SỐ ĐIỆN THOẠI -->
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Số điện thoại <span>*</span>
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Nhập số điện thoại"
+                                inputmode="numeric"
+                                maxlength="10"
+                                autocomplete="tel"
+                                required
+                            >
+
+                            <small class="form-error"></small>
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email <span>*</span>
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="example@gmail.com"
+                                autocomplete="email"
+                                required
+                            >
+
+                            <small class="form-error"></small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         KHÓA HỌC
+                    ================================================== -->
+
+                    <div class="form-group">
+
+                        <label for="course">
+                            Khóa học <span>*</span>
+                        </label>
+
+                        <select
+                            id="course"
+                            name="course"
+                            required
+                        >
+
+                            <option value="">
+                                -- Chọn khóa học --
+                            </option>
+
+
+                            <!-- FITNESS -->
+
+                            <option
+                                value="Fitness Cơ Bản"
+                                data-fee="1.599.000đ"
+                            >
+                                Fitness Cơ Bản
+                            </option>
+
+                            <option
+                                value="Fitness Nâng Cao"
+                                data-fee="1.999.000đ"
+                            >
+                                Fitness Nâng Cao
+                            </option>
+
+
+                            <!-- PICKLEBALL -->
+
+                            <option
+                                value="Pickleball Cơ Bản"
+                                data-fee="1.799.000đ"
+                            >
+                                Pickleball Cơ Bản
+                            </option>
+
+                            <option
+                                value="Pickleball Nâng Cao"
+                                data-fee="2.199.000đ"
+                            >
+                                Pickleball Nâng Cao
+                            </option>
+
+
+                            <!-- CẦU LÔNG -->
+
+                            <option
+                                value="Cầu Lông Cơ Bản"
+                                data-fee="1.599.000đ"
+                            >
+                                Cầu Lông Cơ Bản
+                            </option>
+
+                            <option
+                                value="Cầu Lông Nâng Cao"
+                                data-fee="1.999.000đ"
+                            >
+                                Cầu Lông Nâng Cao
+                            </option>
+
+
+                            <!-- BÓNG ĐÁ -->
+
+                            <option
+                                value="Bóng Đá Cơ Bản"
+                                data-fee="1.799.000đ"
+                            >
+                                Bóng Đá Cơ Bản
+                            </option>
+
+                            <option
+                                value="Bóng Đá Nâng Cao"
+                                data-fee="2.199.000đ"
+                            >
+                                Bóng Đá Nâng Cao
+                            </option>
+
+
+                            <!-- BÓNG RỔ -->
+
+                            <option
+                                value="Bóng Rổ Cơ Bản"
+                                data-fee="1.599.000đ"
+                            >
+                                Bóng Rổ Cơ Bản
+                            </option>
+
+                            <option
+                                value="Bóng Rổ Nâng Cao"
+                                data-fee="1.999.000đ"
+                            >
+                                Bóng Rổ Nâng Cao
+                            </option>
+
+
+                            <!-- BÓNG CHUYỀN -->
+
+                            <option
+                                value="Bóng Chuyền Cơ Bản"
+                                data-fee="1.599.000đ"
+                            >
+                                Bóng Chuyền Cơ Bản
+                            </option>
+
+                            <option
+                                value="Bóng Chuyền Nâng Cao"
+                                data-fee="1.999.000đ"
+                            >
+                                Bóng Chuyền Nâng Cao
+                            </option>
+
+                        </select>
+
+                        <small class="form-error"></small>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         HỌC PHÍ
+                    ================================================== -->
+
+                    <div class="form-group">
+
+                        <label for="courseFee">
+                            Học phí
+                        </label>
+
+                        <input
+                            type="text"
+                            id="courseFee"
+                            name="courseFee"
+                            value="Vui lòng chọn khóa học"
+                            readonly
+                        >
+
+                    </div>
+
+
+                    <!-- =================================================
+                         THỜI GIAN
+                    ================================================== -->
+
+                    <div class="form-group">
+
+                        <label for="time">
+                            Thời gian mong muốn
+                        </label>
+
+                        <select
+                            id="time"
+                            name="time"
+                        >
+
+                            <option value="">
+                                -- Chọn thời gian --
+                            </option>
+
+                            <option value="Buổi sáng">
+                                Buổi sáng
+                            </option>
+
+                            <option value="Buổi chiều">
+                                Buổi chiều
+                            </option>
+
+                            <option value="Buổi tối">
+                                Buổi tối
+                            </option>
+
+                            <option value="Cuối tuần">
+                                Cuối tuần
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         GHI CHÚ
+                    ================================================== -->
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Ghi chú
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            maxlength="500"
+                            placeholder="Bạn muốn FITZONE tư vấn thêm điều gì?"
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         ĐỒNG Ý
+                    ================================================== -->
+
+                    <div class="form-agree">
+
+                        <input
+                            type="checkbox"
+                            id="agree"
+                            name="agree"
+                            required
+                        >
+
+                        <label for="agree">
+                            Tôi đồng ý để FITZONE liên hệ tư vấn về khóa học.
+                        </label>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         NÚT GỬI
+                    ================================================== -->
+
+                    <button
+                        type="submit"
+                        class="register-submit"
+                    >
+                        GỬI ĐĂNG KÝ →
+                    </button>
+
+
+                    <!-- GHI CHÚ -->
+
+                    <p class="form-note">
+                        * Các thông tin có dấu sao là bắt buộc.
+                    </p>
+
+
+                    <!-- =================================================
+                         THÔNG BÁO THÀNH CÔNG
+                    ================================================== -->
+
+                    <div
+                        id="registerSuccess"
+                        class="register-success"
+                        role="alert"
+                    >
+
+                        <span class="success-icon">
+                            ✓
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Gửi đăng ký thành công!
+                            </strong>
+
+                            <small>
+                                Cảm ơn bạn đã đăng ký.
+                                FITZONE sẽ liên hệ với bạn sớm nhất.
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-logo">
+                FIT<span>ZONE</span>
+            </div>
+
+            <p>
+                © 2026 FITZONE SPORTS CENTER. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- =====================================================
+     POPUP ĐĂNG KÝ THÀNH CÔNG
+===================================================== -->
+
+<div
+    id="registerSuccessPopup"
+    class="register-success-popup"
+>
+
+    <div class="register-success-box">
+
+        <div class="register-success-icon">
+            ✓
+        </div>
+
+        <h3>
+            ĐĂNG KÝ THÀNH CÔNG
+        </h3>
+
+        <p>
+            Cảm ơn bạn đã đăng ký.<br>
+            FITZONE sẽ liên hệ với bạn trong thời gian sớm nhất.
+        </p>
+
+        <button
+            type="button"
+            class="register-success-ok"
+        >
+            OK
+        </button>
+
+    </div>
+
+</div>
+
+
+    <!-- JAVASCRIPT CHUNG -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
