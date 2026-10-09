@@ -1505,17 +1505,7 @@ if (form) {
                     result
                 );
 
-                /* HIỆN POPUP ĐĂNG KÝ THÀNH CÔNG */
 
-registerSuccessPopup.classList.add("show");
-
-registerPageForm.reset();
-
-const fee = document.getElementById("courseFee");
-
-if (fee) {
-    fee.value = "Vui lòng chọn khóa học";
-}
 
                 /* =================================================
                    ĐÓNG FORM ĐĂNG KÝ
