@@ -1466,7 +1466,7 @@ if (form) {
 
                 const response =
                     await fetch(
-                        "http://localhost:8080/api/register",
+                        "https://fitzone-backend-r1lf.onrender.com/api/register",
                         {
 
                             method: "POST",
@@ -1900,7 +1900,7 @@ if (registerPageForm) {
 
                 const response =
                     await fetch(
-                        "http://localhost:8080/api/register",
+                        "https://fitzone-backend-r1lf.onrender.com/api/register",
                         {
                             method: "POST",
 
