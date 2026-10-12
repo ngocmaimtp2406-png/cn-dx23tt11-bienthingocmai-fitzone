@@ -25,13 +25,15 @@ public class RegistrationController {
         System.out.println("=============================");
 
         // Gửi thông tin đăng ký về Gmail quản lý
-        emailService.sendRegistrationEmail(
-                request.getFullname(),
-                request.getPhone(),
-                request.getEmail(),
-                request.getCourse(),
-                request.getLevel()
-        );
+emailService.sendRegistrationEmail(
+        request.getFullname(),
+        request.getPhone(),
+        request.getEmail(),
+        request.getCourse(),
+        request.getLevel(),
+        request.getTime(),
+        request.getMessage()
+);
 
         return "Đăng ký thành công!";
     }
@@ -45,10 +47,28 @@ class RegistrationRequest {
     private String email;
     private String course;
     private String level;
+    private String time;
+private String message;
 
     public String getFullname() {
         return fullname;
     }
+
+    public String getTime() {
+    return time;
+}
+
+public void setTime(String time) {
+    this.time = time;
+}
+
+public String getMessage() {
+    return message;
+}
+
+public void setMessage(String message) {
+    this.message = message;
+}
 
     public void setFullname(String fullname) {
         this.fullname = fullname;

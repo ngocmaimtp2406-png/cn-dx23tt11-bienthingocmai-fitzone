@@ -1438,24 +1438,36 @@ if (form) {
                DỮ LIỆU GỬI VỀ BACKEND
             ================================================= */
 
-            const data = {
+ const time =
+    document.getElementById("universalTime");
 
-                fullname:
-                    name.value.trim(),
+const message =
+    document.getElementById("universalMessage");
 
-                phone:
-                    phone.value.trim(),
 
-                email:
-                    email.value.trim(),
+const data = {
 
-                course:
-                    courseValue,
+    fullname:
+        name.value.trim(),
 
-                level:
-                    level
+    phone:
+        phone.value.trim(),
 
-            };
+    email:
+        email.value.trim(),
+
+    course:
+        courseValue,
+
+    level:
+        level,
+
+    time:
+        time ? time.value : "",
+
+    message:
+        message ? message.value.trim() : ""
+};
 
 
             try {

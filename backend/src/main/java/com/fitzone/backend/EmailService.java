@@ -19,12 +19,14 @@ public class EmailService {
     private final HttpClient httpClient =
             HttpClient.newHttpClient();
 
-    public void sendRegistrationEmail(
-            String fullname,
-            String phone,
-            String email,
-            String course,
-            String level) {
+public void sendRegistrationEmail(
+        String fullname,
+        String phone,
+        String email,
+        String course,
+        String level,
+        String time,
+        String message) {
 
         try {
 
@@ -39,14 +41,17 @@ public class EmailService {
 
             // Nội dung email
             String emailContent =
-                    "THÔNG TIN ĐĂNG KÝ FITZONE\n\n" +
-                    "Họ tên: " + fullname + "\n" +
-                    "Số điện thoại: " + phone + "\n" +
-                    "Email: " + email + "\n" +
-                    "Khóa học: " + course + "\n" +
-                    "Cấp độ: " + level + "\n\n" +
-                    "Vui lòng liên hệ học viên để xác nhận đăng ký.";
+        "THÔNG TIN ĐĂNG KÝ FITZONE\n\n" +
+        "Họ tên: " + fullname + "\n" +
+        "Số điện thoại: " + phone + "\n" +
+        "Email: " + email + "\n" +
+        "Khóa học: " + course + "\n" +
+        "Cấp độ: " + level + "\n" +
+        "Thời gian mong muốn: " + time + "\n" +
+        "Ghi chú: " + message + "\n\n" +
+        "Vui lòng liên hệ học viên để xác nhận đăng ký.";
 
+        
             // Tạo nội dung gửi Resend
             Map<String, Object> emailData =
                     new HashMap<>();
